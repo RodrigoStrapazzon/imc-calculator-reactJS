@@ -1,0 +1,95 @@
+@import "animate.css";
+
+.App {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin: 10px 0;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-error {
+  border-color: red;
+  animation: shake 0.3s ease-in-out;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.erro-container {
+  height: 0;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.erro-container.show {
+  height: auto;
+  transition: height 0.3s ease;
+}
+
+.erro {
+  color: red;
+  font-weight: bold;
+}
+
+.resultado {
+  margin-top: 20px;
+}
+
+.resultado p {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 100%;
+    padding: 12px;
+  }
+
+  button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
